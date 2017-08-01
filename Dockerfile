@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY appium/sample-scripts/python/. .
 
-CMD python run-test.py -k ${API_KEY} -s screenshots -a ${APP} -t testdroid_android
+CMD python run-test.py -k ${API_KEY} -s screenshots -a ${APP:-sample/BitbarSampleApp.apk} $([ ! -z "$DEVICE" ] && echo "--device $DEVICE") -t testdroid_android
