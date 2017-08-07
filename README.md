@@ -18,8 +18,31 @@ for testing (older) iOS versions.
 
 * *robot-framework/* - directory contains example for Robot Framework test framework.
 
+# Docker
+
+Testdroid Samples have been dockerized to provide you minimalistic solution in use of our services.
+Now you can just type
+> docker run --rm -it -e API_KEY=(insert your API key here)
+
+to run our sample tests.
+
+You can provide following environment variables
+* API_KEY
+* SCREENSHOTS
+* TEST
+* APP
+* DEVICE
+* DEVICE_GROUP_ID
+* PROJECT
+* RUN_NAME
+* URL
+* APPIUM_URL
+* BUNDLE_ID
+* APP_PACKAGE
+* APP_ACTIVITY
+* CMD_TIMEOUT
+* TEST_TIMEOUT
 
 ## License
 
 See the [LICENSE](LICENSE) file.
-
